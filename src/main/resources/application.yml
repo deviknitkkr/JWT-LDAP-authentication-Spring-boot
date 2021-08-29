@@ -1,0 +1,17 @@
+spring:
+  ldap:
+    embedded:
+      port: 8389
+      base-dn: dc=springframework,dc=org
+      ldif: classpath:test-server.ldif
+
+
+jwt:
+  secretkey: dhuid08h048y
+  token:
+    title: Authorization
+
+server:
+  error:
+    include-message: always
+    include-stacktrace: never
